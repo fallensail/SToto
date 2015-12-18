@@ -1,2 +1,3 @@
-# cs205parallelnw
-CS205 Final Project
+# SToto
+STyle your photo!
+AC299r Independent Project
