@@ -30,5 +30,10 @@
     margin-top: 20px;
 }
 
+.list-image > .img-responsive{
+	max-width:100%;
+	width:500px;
+}
+
 
 
