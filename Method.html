@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>AC299r Website</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./bootstrap-3.3.1/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Bootstrap core CSS -->
+        <link href="./bootstrap-3.3.1/css/bootstrap.icon-large.min.css" rel="stylesheet">
+        
+        <!-- Custom styles for the homepage -->
+        <link href="./css/main.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+                <![endif]-->
+    </head>
+
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./index.html">HOME</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="./Background.html">Background</a></li>
+        <li><a href="./Method.html">Method</a></li>
+        <li><a href="./Implementation.html">Implementation</a></li>
+        <li><a href="./Gallery.html">Gallery</a></li>
+        <li><a href="./Acknowledgement.html">Acknowledgement</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+    <li><a href="./abouts.html">ABOUT THE AUTHORS</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Content -->
+<!-- Collapsible Bar -->
+<!-- Add Padding -->
+  </br>
+  </br>
+  </br>
+  </br>
+
+<div class="container">
+	<h2>Approach</h2>
+	<p>Convoluted Neural Network allows us to view an image through multiple layers formed with millions of neurons. We gain more information of an image from analyzing neurons in different layers than pixels directly. In order to construct a styled photo, we need to define two forms of loss function, namely content loss and style loss. The former captures how similar the resulted image is in terms of the actual content to the original photo whereas the latter characterizes the artistic strokes and patterns that are defined by the styled painting. </p>
+  <div class="container" align="center"> 
+      <img src="approach.png" class="img-responsive" /> 
+  </div>
+	<hr/>
+	<h2>Loss Functions</h2>
+  <h3>Content Loss Function</h3>
+	  <div class="container" align="center"> 
+      <img src="content_loss.png" class="img-responsive" /> 
+    </div>
+  <br>
+  <h3>Style Loss Function</h3>
+  <div class="container" align="center"> 
+    <img src="style_loss.png" class="img-responsive" /> 
+  </div>
+  <br>
+  <h3>Total Loss Function</h3>
+  <div class="container" align="center"> 
+    <img src="total_loss.png" class="img-responsive" /> 
+  </div>
+  <hr/> 
+  <h2>Model and Parameters</h2> 
+  <p>We used VGG-Network, a Convolutional Neural Network that rivals human performance on a common visual object recognition benchmark task. There are 16 convolutional and 5 pooling layers. The model is publicly available and can be explored in the caffe-framework. All the feature maps and parameters are directly applied from this model to our project. We then ran through combinations of weights on the content loss and style loss functions, and examined which combination yields the most visually appealing results. </p>
+</div>
+
+</br>
+</br>
+</br>
+
+<!-- Bootstrap core JavaScript. Placed at the end of the document so the pages load faster. -->
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./bootstrap-3.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

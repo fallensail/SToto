@@ -1,2 +1,2 @@
-# ac299r
-styled painting
+# cs205parallelnw
+CS205 Final Project
